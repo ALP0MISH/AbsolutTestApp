@@ -7,7 +7,7 @@ private fun validateMinLength(input: String, minLength: Int): Boolean {
 
 fun validateNameAndEmail(name: String, email: String): Boolean {
     val emailPattern = Regex("[a-zA-Z0-9]+@(gmail\\.com|mail\\.ru)")
-    return validateMinLength(name, 6) && email.matches(emailPattern)
+    return validateMinLength(name, 2) && email.matches(emailPattern)
 }
 
 fun validateInstitutionCityAndAddress(institution: String, city: String, address: String): Boolean {
